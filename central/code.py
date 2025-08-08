@@ -7,6 +7,8 @@ janela.title = " "
 janela.geometry("600x450")
 janela.resizable(False,False)
 
+
+
 #Frames
 frame_principal = tk.Frame(janela, bg = "#FBD3F9")
 frame_principal.pack(fill = "both", expand = True)
@@ -47,5 +49,14 @@ temp_inicial.pack(side = "left", padx = 5)
 
 btn2 = tk.Button(frame_botoes, width = 10, pady = 5, text="Copiar")
 btn2.pack()
+
+
+#fórmulas
+#celsius para fahrenheit == F = C∗(9.0/5.0)+32.0
+#fahrenheit para celsius == C = 5.0 ∗ (F − 32.0)/9.0
+#kelvin para celsius == C = K − 273.15
+#celsius para kelvin == K = C + 273.15
+
+#Organizar a janela e adicionar lógica 
 
 janela.mainloop()
