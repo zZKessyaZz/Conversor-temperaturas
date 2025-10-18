@@ -17,37 +17,37 @@ frame_principal.pack(fill = "both", expand = True)
 frame_inicial = tk.Frame(frame_principal, bg = "#FBD3F9")
 frame_inicial.pack(pady=(50,30))
 
-label = tk.Label(frame_inicial, text="Digite a temperatura inicial:",bg="#FBD3F9")
-label.pack(side="left", padx = 5)
+label = tk.Label(frame_inicial, text="Temperatura inicial:",bg="#FBD3F9",font = ("Comic Sans MS", 10, "bold"))
+label.pack(side="left", padx = 8)
 temp_inicial = tk.Entry(frame_inicial, justify='center',width=15)
 temp_inicial.pack(side = "left")
 escala_inicial = tk.Spinbox(frame_inicial, justify= "center",width=15)
 escala_inicial.pack(side = "left", padx = 5)
-label = tk.Label(frame_inicial, text="Escala termométrica inicial",bg="#FBD3F9")
+label = tk.Label(frame_inicial, text="Escala termométrica inicial",bg="#FBD3F9", font = ("Comic Sans MS", 10, "bold"))
 label.pack(side = "left")
 
 ########
 frame_abaixo = tk.Frame(frame_principal, bg="#FBD3F9")
 frame_abaixo.pack()
 
-label1 = tk.Label(frame_abaixo, text="Escala termométrica desejada:", bg="#FBD3F9")
-label1.pack(side="left")
+label1 = tk.Label(frame_abaixo, text="Escala termométrica desejada:", bg="#FBD3F9",font = ("Comic Sans MS", 10, "bold"))
+label1.pack(side="top")
 escala_desejada = tk.Spinbox(frame_abaixo, justify="center",width=15)
-escala_desejada.pack(side = "left", padx = 5, pady = 10)
+escala_desejada.pack(side = "bottom", padx = 5, pady = 5)
 
 ########
 frame_botoes = tk.Frame(frame_principal, bg = "#FBD3F9")
 frame_botoes.pack()
 
-btn1 = tk.Button(frame_botoes, width=10, height= 2, text="Converter")
-btn1.pack(pady = (20))
+btn1 = tk.Button(frame_botoes, width=10, height= 2, text="Converter", font = ("Comic Sans MS", 12), bg= "#FFFFFF")
+btn1.pack(pady = (50))
 
-label = tk.Label(frame_botoes, text="Temperatura convertida:",bg="#FBD3F9")
-label.pack(side = "left", pady = 5)
+label = tk.Label(frame_botoes, text="Temperatura convertida:",bg="#FBD3F9",font = ("Comic Sans MS", 10, "bold"))
+label.pack(side = "left", pady = 8)
 temp_inicial = tk.Entry(frame_botoes, justify='center')
-temp_inicial.pack(side = "left", padx = 5)
+temp_inicial.pack(side = "left", padx = 8)
 
-btn2 = tk.Button(frame_botoes, width = 10, pady = 5, text="Copiar")
+btn2 = tk.Button(frame_botoes, width = 10, pady = 5, text="Copiar", font = ("Comic Sans MS", 12), bg = "#FFFFFF")
 btn2.pack()
 
 
