@@ -8,15 +8,16 @@ janela.geometry("600x450")
 janela.resizable(False,False)
 
 
-
 #Frames
 frame_principal = tk.Frame(janela, bg = "#340B32")
 frame_principal.pack(fill = "both", expand = True)
 
 #########
 frame_inicial = tk.Frame(frame_principal, bg = "#340B32")
-frame_inicial.pack(pady=(50,30))
+frame_inicial.pack(pady=(30,30))
 
+label = tk.Label(frame_inicial, text = " \u2728 Conversor de Temperaturas \u2728", fg = "#FFFFFF", bg="#340B32",font = ("Comic Sans MS", 18))
+label.pack(side= "top", padx = 10, pady = 15)
 label = tk.Label(frame_inicial, text="Temperatura inicial:",fg = "#FFFFFF", bg="#340B32",font = ("Comic Sans MS", 12))
 label.pack(side="left", padx = 8)
 temp_inicial = tk.Entry(frame_inicial, justify='center',width=15)
@@ -30,16 +31,16 @@ label.pack(side = "left")
 frame_abaixo = tk.Frame(frame_principal, bg="#340B32")
 frame_abaixo.pack()
 
-label1 = tk.Label(frame_abaixo, text="Escala termométrica desejada:", fg = "#FFFFFF",bg="#340B32",font = ("Comic Sans MS", 13))
+label1 = tk.Label(frame_abaixo, text="Escala termométrica desejada:", fg = "#FFFFFF",bg="#340B32",font = ("Comic Sans MS", 12))
 label1.pack(side="top")
 escala_desejada = tk.Spinbox(frame_abaixo, justify="center",width=15)
 escala_desejada.pack(side = "bottom", padx = 5, pady = 5)
 
 ########
-frame_botoes = tk.Frame(frame_principal, bg = "#340B32")
+frame_botoes = tk.Frame(frame_principal, bg = "#340B32" )
 frame_botoes.pack()
 
-btn1 = tk.Button(frame_botoes, width=10, height= 2, text="Converter", font = ("Comic Sans MS", 12), bg= "#FFFFFF")
+btn1 = tk.Button(frame_botoes, width=10, height= 2, text="Converter", font = ("Comic Sans MS", 12), activeforeground= "#000000", activebackground= "#FFFFFF")
 btn1.pack(pady = (50))
 
 label = tk.Label(frame_botoes, text="Temperatura convertida:",fg = "#FFFFFF", bg="#340B32",font = ("Comic Sans MS", 13))
@@ -47,7 +48,7 @@ label.pack(side = "left", pady = 8)
 temp_inicial = tk.Entry(frame_botoes, justify='center')
 temp_inicial.pack(side = "left", padx = 8)
 
-btn2 = tk.Button(frame_botoes, width = 10, pady = 5, text="Copiar", font = ("Comic Sans MS", 12), bg = "#FFFFFF")
+btn2 = tk.Button(frame_botoes, width = 10, pady = 5, text="Copiar", font = ("Comic Sans MS", 12), activeforeground= "#000000", activebackground= "#FFFFFF")
 btn2.pack()
 
 
